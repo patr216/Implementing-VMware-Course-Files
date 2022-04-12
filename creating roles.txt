@@ -1,0 +1,5 @@
+1. Click +Add and the virtualization radial button.
+2. Click Browse and download the VSC_users_roles.json file. 
+3. Pick VSC,VASA Provider and SRA product capability
+4. USERNAME: OTVadmin
+5. PASSWORD: Netapp1!

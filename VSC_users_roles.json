@@ -1,0 +1,2019 @@
+{
+  "products": [
+    {
+      "name": "ONTAP Tools for VMware vSphere",
+      "display_name" : "ONTAP Tools for VMware vSphere",
+      "description": "ONTAP Tools for VMware vSphere",
+      "supported_ontap_version": [
+        "9.9",
+        "9.9"
+      ],
+      "features": [
+        {
+          "name": "VSC",
+          "display_name": "VSC",
+          "description": "VSC",
+          "scope": [
+            {
+              "name": "cluster",
+              "privileges": [
+                {
+                  "name": "Discovery",
+                  "description": "This role allows for the discovery of all the connected storage controllers.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "network interface migrate",
+                          "security login role show-user-capability",
+                          "set",
+                          "storage failover show",
+                          "system node run",
+                          "volume efficiency stat",
+                          "job"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "cluster identity show",
+                          "cluster peer show",
+                          "cluster show",
+                          "lun geometry",
+                          "lun igroup show",
+                          "lun show",
+                          "network fcp adapter show",
+                          "network interface show",
+                          "network port show",
+                          "security login role show-ontapi",
+                          "security login role show",
+                          "security login show",
+                          "snapmirror show",
+                          "storage aggregate show",
+                          "storage disk show",
+                          "system health alert show",
+                          "system health status show",
+                          "system license show",
+                          "system node run",
+                          "system node show",
+                          "version",
+                          "volume efficiency show",
+                          "volume qtree show",
+                          "volume quota report",
+                          "volume quota show",
+                          "volume show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy show",
+                          "vserver fcp initiator show",
+                          "vserver fcp interface show",
+                          "vserver fcp show",
+                          "vserver iscsi show",
+                          "vserver nfs show",
+                          "vserver nfs status",
+                          "vserver show",
+                          "lun mapping show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Create Storage",
+                  "description": "This role allows for the creation of volumes and logical unit number (LUNs).",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun comment",
+                          "lun create",
+                          "lun igroup add",
+                          "lun igroup create",
+                          "lun igroup set",
+                          "lun igroup show",
+                          "lun modify",
+                          "lun move",
+                          "lun online",
+                          "snapmirror update-ls-set",
+                          "system node autosupport invoke",
+                          "volume autosize",
+                          "volume clone create",
+                          "volume create",
+                          "volume efficiency on",
+                          "volume efficiency show",
+                          "volume efficiency start",
+                          "volume efficiency stop",
+                          "volume modify",
+                          "volume restrict",
+                          "volume snapshot create",
+                          "volume snapshot delete",
+                          "volume unmount",
+                          "vserver export-policy rule create",
+                          "vserver export-policy rule setindex",
+                          "vserver iscsi interface accesslist add",
+                          "vserver nfs status",
+                          "vserver services name-service unix-group",
+                          "vserver services name-service unix-user",
+                          "lun mapping create",
+                          "lun mapping delete",
+                          "qos policy-group create"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "job show-completed",
+                          "snapmirror show",
+                          "volume snapshot show",
+                          "vserver fcp initiator show",
+                          "vserver iscsi connection show",
+                          "vserver iscsi interface show",
+                          "vserver iscsi session show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Modify Storage",
+                  "description": "This role allows for the resizing and deduplicating of storage.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun resize",
+                          "volume efficiency off",
+                          "volume file",
+                          "volume size"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Destroy Storage",
+                  "description": "This role allows for the destruction of volumes and LUNs.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun delete",
+                          "lun offline",
+                          "volume destroy",
+                          "volume offline"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "svm",
+              "privileges": [
+                {
+                  "name": "Discovery",
+                  "description": "This role allows for the discovery of all the connected storage controllers.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "security login role show-user-capability",
+                          "set",
+                          "event generate-autosupport-log",
+                          "volume efficiency stat",
+                          "snapmirror show",
+                          "job"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun geometry",
+                          "lun igroup show",
+                          "lun show",
+                          "network interface",
+                          "version",
+                          "volume efficiency show",
+                          "volume qtree show",
+                          "volume quota report",
+                          "volume quota show",
+                          "volume show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy show",
+                          "vserver fcp initiator show",
+                          "vserver fcp interface show",
+                          "vserver fcp show",
+                          "vserver iscsi show",
+                          "vserver nfs show",
+                          "vserver nfs status",
+                          "vserver",
+                          "lun mapping show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Create Storage",
+                  "description": "This role allows for the creation of volumes and logical unit number (LUNs).",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun comment",
+                          "lun create",
+                          "lun igroup add",
+                          "lun igroup create",
+                          "lun igroup set",
+                          "lun igroup show",
+                          "lun modify",
+                          "lun move cancel",
+                          "lun move modify",
+                          "lun move pause",
+                          "lun move recover-source",
+                          "lun move resume",
+                          "lun move show",
+                          "lun move show-by-job-info",
+                          "lun move start",
+                          "lun online",
+                          "volume autosize",
+                          "volume clone create",
+                          "volume create",
+                          "volume efficiency on",
+                          "volume efficiency show",
+                          "volume efficiency start",
+                          "volume efficiency stop",
+                          "volume modify",
+                          "volume restrict",
+                          "volume snapshot create",
+                          "volume snapshot delete",
+                          "volume unmount",
+                          "vserver export-policy rule create",
+                          "vserver export-policy rule setindex",
+                          "vserver iscsi interface accesslist add",
+                          "vserver nfs status",
+                          "snapmirror abort",
+                          "snapmirror break",
+                          "snapmirror check",
+                          "snapmirror create",
+                          "snapmirror delete",
+                          "snapmirror get-volume-status",
+                          "snapmirror initialize",
+                          "snapmirror list-destinations",
+                          "snapmirror modify",
+                          "snapmirror quiesce",
+                          "snapmirror release",
+                          "snapmirror restore",
+                          "snapmirror resume",
+                          "snapmirror resync",
+                          "snapmirror show",
+                          "snapmirror update",
+                          "snapmirror policy add-rule",
+                          "snapmirror policy create",
+                          "snapmirror policy delete",
+                          "snapmirror policy modify",
+                          "snapmirror policy modify-rule",
+                          "snapmirror policy remove-rule",
+                          "snapmirror policy show",
+                          "snapmirror snapshot-owner create",
+                          "snapmirror snapshot-owner delete",
+                          "snapmirror snapshot-owner show",
+                          "snapmirror update-ls-set",
+                          "lun mapping create",
+                          "lun mapping delete",
+                          "vserver services name-service unix-group adduser",
+                          "vserver services name-service unix-group addusers",
+                          "vserver services name-service unix-group create",
+                          "vserver services name-service unix-group delete",
+                          "vserver services name-service unix-group deluser",
+                          "vserver services name-service unix-group load-from-uri",
+                          "vserver services name-service unix-group modify",
+                          "vserver services name-service unix-group show",
+                          "vserver services name-service unix-group file show",
+                          "vserver services name-service unix-group file status",
+                          "vserver services name-service unix-group file-only modify",
+                          "vserver services name-service unix-group file-only show",
+                          "vserver services name-service unix-user create",
+                          "vserver services name-service unix-user delete",
+                          "vserver services name-service unix-user load-from-uri",
+                          "vserver services name-service unix-user modify",
+                          "vserver services name-service unix-user show",
+                          "vserver services name-service unix-user file show",
+                          "vserver services name-service unix-user file status",
+                          "vserver services name-service unix-user file-only modify",
+                          "vserver services name-service unix-user file-only show"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "job show-completed",
+                          "volume snapshot show",
+                          "vserver fcp initiator show",
+                          "vserver iscsi connection show",
+                          "vserver iscsi interface show",
+                          "vserver iscsi session show",
+                          "lun mapping show"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Modify Storage",
+                  "description": "This role allows for the resizing and deduplicating of storage.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun resize",
+                          "volume efficiency off",
+                          "volume file show-disk-usage",
+                          "volume size"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Destroy Storage",
+                  "description": "This role allows for the destruction of volumes and LUNs.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun delete",
+                          "lun offline",
+                          "volume destroy",
+                          "volume offline"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VSC and VASA Provider",
+          "display_name": "VSC & VP",
+          "description": "VSC and VASA Provider",
+          "scope": [
+            {
+              "name": "cluster",
+              "privileges": [
+                {
+                  "name": "Discovery",
+                  "description": "This role allows for the discovery of all the connected storage controllers.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "network interface migrate",
+                          "security login role show-user-capability",
+                          "set",
+                          "storage failover show",
+                          "system node run",
+                          "volume efficiency stat",
+                          "job"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "cluster identity show",
+                          "cluster peer show",
+                          "cluster show",
+                          "lun geometry",
+                          "lun igroup show",
+                          "lun show",
+                          "network fcp adapter show",
+                          "network interface show",
+                          "network port show",
+                          "security login role show-ontapi",
+                          "security login role show",
+                          "security login show",
+                          "snapmirror show",
+                          "storage aggregate show",
+                          "storage disk show",
+                          "system health alert show",
+                          "system health status show",
+                          "system license show",
+                          "system node run",
+                          "system node show",
+                          "version",
+                          "volume efficiency show",
+                          "volume qtree show",
+                          "volume quota report",
+                          "volume quota show",
+                          "volume show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy show",
+                          "vserver fcp initiator show",
+                          "vserver fcp interface show",
+                          "vserver fcp show",
+                          "vserver iscsi show",
+                          "vserver nfs show",
+                          "vserver nfs status",
+                          "vserver show",
+                          "lun mapping show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Create Storage",
+                  "description": "This role allows for the creation of volumes and logical unit number (LUNs).",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun comment",
+                          "lun create",
+                          "lun igroup add",
+                          "lun igroup create",
+                          "lun igroup set",
+                          "lun igroup show",
+                          "lun modify",
+                          "lun move",
+                          "lun online",
+                          "snapmirror update-ls-set",
+                          "system node autosupport invoke",
+                          "volume autosize",
+                          "volume clone create",
+                          "volume create",
+                          "volume efficiency on",
+                          "volume efficiency show",
+                          "volume efficiency start",
+                          "volume efficiency stop",
+                          "volume modify",
+                          "volume restrict",
+                          "volume snapshot create",
+                          "volume snapshot delete",
+                          "volume unmount",
+                          "vserver export-policy rule create",
+                          "vserver export-policy rule setindex",
+                          "vserver iscsi interface accesslist add",
+                          "vserver nfs status",
+                          "vserver services name-service unix-group",
+                          "vserver services name-service unix-user",
+                          "lun mapping create",
+                          "lun mapping delete",
+                          "qos policy-group create"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "job show-completed",
+                          "snapmirror show",
+                          "volume snapshot show",
+                          "vserver fcp initiator show",
+                          "vserver iscsi connection show",
+                          "vserver iscsi interface show",
+                          "vserver iscsi session show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Modify Storage",
+                  "description": "This role allows for the resizing and deduplicating of storage.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun resize",
+                          "volume efficiency off",
+                          "volume file",
+                          "volume size"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Destroy Storage",
+                  "description": "This role allows for the destruction of volumes and LUNs.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun delete",
+                          "lun offline",
+                          "volume destroy",
+                          "volume offline"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "svm",
+              "privileges": [
+                {
+                  "name": "Discovery",
+                  "description": "This role allows for the discovery of all the connected storage controllers.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "security login role show-user-capability",
+                          "set",
+                          "event generate-autosupport-log",
+                          "volume efficiency stat",
+                          "snapmirror show",
+                          "job"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun geometry",
+                          "lun igroup show",
+                          "lun show",
+                          "network interface",
+                          "version",
+                          "volume efficiency show",
+                          "volume qtree show",
+                          "volume quota report",
+                          "volume quota show",
+                          "volume show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy show",
+                          "vserver fcp initiator show",
+                          "vserver fcp interface show",
+                          "vserver fcp show",
+                          "vserver iscsi show",
+                          "vserver nfs show",
+                          "vserver nfs status",
+                          "vserver",
+                          "lun mapping show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Create Storage",
+                  "description": "This role allows for the creation of volumes and logical unit number (LUNs).",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun comment",
+                          "lun create",
+                          "lun igroup add",
+                          "lun igroup create",
+                          "lun igroup set",
+                          "lun igroup show",
+                          "lun modify",
+                          "lun move cancel",
+                          "lun move modify",
+                          "lun move pause",
+                          "lun move recover-source",
+                          "lun move resume",
+                          "lun move show",
+                          "lun move show-by-job-info",
+                          "lun move start",
+                          "lun online",
+                          "volume autosize",
+                          "volume clone create",
+                          "volume create",
+                          "volume efficiency on",
+                          "volume efficiency show",
+                          "volume efficiency start",
+                          "volume efficiency stop",
+                          "volume modify",
+                          "volume restrict",
+                          "volume snapshot create",
+                          "volume snapshot delete",
+                          "volume unmount",
+                          "vserver export-policy rule create",
+                          "vserver export-policy rule setindex",
+                          "vserver iscsi interface accesslist add",
+                          "vserver nfs status",
+                          "snapmirror abort",
+                          "snapmirror break",
+                          "snapmirror check",
+                          "snapmirror create",
+                          "snapmirror delete",
+                          "snapmirror get-volume-status",
+                          "snapmirror initialize",
+                          "snapmirror list-destinations",
+                          "snapmirror modify",
+                          "snapmirror quiesce",
+                          "snapmirror release",
+                          "snapmirror restore",
+                          "snapmirror resume",
+                          "snapmirror resync",
+                          "snapmirror show",
+                          "snapmirror update",
+                          "snapmirror policy add-rule",
+                          "snapmirror policy create",
+                          "snapmirror policy delete",
+                          "snapmirror policy modify",
+                          "snapmirror policy modify-rule",
+                          "snapmirror policy remove-rule",
+                          "snapmirror policy show",
+                          "snapmirror snapshot-owner create",
+                          "snapmirror snapshot-owner delete",
+                          "snapmirror snapshot-owner show",
+                          "snapmirror update-ls-set",
+                          "lun mapping create",
+                          "lun mapping delete",
+                          "vserver services name-service unix-group adduser",
+                          "vserver services name-service unix-group addusers",
+                          "vserver services name-service unix-group create",
+                          "vserver services name-service unix-group delete",
+                          "vserver services name-service unix-group deluser",
+                          "vserver services name-service unix-group load-from-uri",
+                          "vserver services name-service unix-group modify",
+                          "vserver services name-service unix-group show",
+                          "vserver services name-service unix-group file show",
+                          "vserver services name-service unix-group file status",
+                          "vserver services name-service unix-group file-only modify",
+                          "vserver services name-service unix-group file-only show",
+                          "vserver services name-service unix-user create",
+                          "vserver services name-service unix-user delete",
+                          "vserver services name-service unix-user load-from-uri",
+                          "vserver services name-service unix-user modify",
+                          "vserver services name-service unix-user show",
+                          "vserver services name-service unix-user file show",
+                          "vserver services name-service unix-user file status",
+                          "vserver services name-service unix-user file-only modify",
+                          "vserver services name-service unix-user file-only show"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "job show-completed",
+                          "volume snapshot show",
+                          "vserver fcp initiator show",
+                          "vserver iscsi connection show",
+                          "vserver iscsi interface show",
+                          "vserver iscsi session show",
+                          "lun mapping show"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Modify Storage",
+                  "description": "This role allows for the resizing and deduplicating of storage.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun resize",
+                          "volume efficiency off",
+                          "volume file show-disk-usage",
+                          "volume size"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Destroy Storage",
+                  "description": "This role allows for the destruction of volumes and LUNs.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun delete",
+                          "lun offline",
+                          "volume destroy",
+                          "volume offline"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VSC and SRA",
+          "display_name": "VSC & SRA",
+          "description": "VSC and SRA",
+          "scope": [
+            {
+              "name": "cluster",
+              "privileges": [
+                {
+                  "name": "Discovery",
+                  "description": "This role allows for the discovery of all the connected storage controllers.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "network interface migrate",
+                          "security login role show-user-capability",
+                          "set",
+                          "storage failover show",
+                          "system node run",
+                          "volume efficiency stat",
+                          "job"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "cluster identity show",
+                          "cluster peer show",
+                          "cluster show",
+                          "lun geometry",
+                          "lun igroup show",
+                          "lun show",
+                          "network fcp adapter show",
+                          "network interface show",
+                          "network port show",
+                          "security login role show-ontapi",
+                          "security login role show",
+                          "security login show",
+                          "snapmirror show",
+                          "storage aggregate show",
+                          "storage disk show",
+                          "system health alert show",
+                          "system health status show",
+                          "system license show",
+                          "system node run",
+                          "system node show",
+                          "version",
+                          "volume efficiency show",
+                          "volume qtree show",
+                          "volume quota report",
+                          "volume quota show",
+                          "volume show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy show",
+                          "vserver fcp initiator show",
+                          "vserver fcp interface show",
+                          "vserver fcp show",
+                          "vserver iscsi show",
+                          "vserver nfs show",
+                          "vserver nfs status",
+                          "vserver show",
+                          "lun mapping show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Create Storage",
+                  "description": "This role allows for the creation of volumes and logical unit number (LUNs).",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun comment",
+                          "lun create",
+                          "lun igroup add",
+                          "lun igroup create",
+                          "lun igroup set",
+                          "lun igroup show",
+                          "lun modify",
+                          "lun move",
+                          "lun online",
+                          "snapmirror update-ls-set",
+                          "system node autosupport invoke",
+                          "volume autosize",
+                          "volume clone create",
+                          "volume create",
+                          "volume efficiency on",
+                          "volume efficiency show",
+                          "volume efficiency start",
+                          "volume efficiency stop",
+                          "volume modify",
+                          "volume restrict",
+                          "volume snapshot create",
+                          "volume snapshot delete",
+                          "volume unmount",
+                          "vserver export-policy rule create",
+                          "vserver export-policy rule setindex",
+                          "vserver iscsi interface accesslist add",
+                          "vserver nfs status",
+                          "vserver services name-service unix-group",
+                          "vserver services name-service unix-user",
+                          "lun mapping create",
+                          "lun mapping delete",
+                          "qos policy-group create"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "job show-completed",
+                          "snapmirror show",
+                          "volume snapshot show",
+                          "vserver fcp initiator show",
+                          "vserver iscsi connection show",
+                          "vserver iscsi interface show",
+                          "vserver iscsi session show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Modify Storage",
+                  "description": "This role allows for the resizing and deduplicating of storage.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun resize",
+                          "volume efficiency off",
+                          "volume file",
+                          "volume size"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Destroy Storage",
+                  "description": "This role allows for the destruction of volumes and LUNs.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun delete",
+                          "lun offline",
+                          "volume destroy",
+                          "volume offline"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "NAS/SAN Role",
+                  "description": "This role allows for the discovery of all the connected storage controllers in a NAS or SAN only on VMware SRM environment.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun",
+                          "qos policy-group create",
+                          "qos policy-group show",
+                          "snapmirror",
+                          "storage failover show",
+                          "system node run",
+                          "system services ndmp",
+                          "system snmp traphost add",
+                          "system snmp traphost delete",
+                          "vserver nfs status",
+                          "vserver nfs show",
+                          "vserver nfs modify",
+                          "vserver nfs delete",
+                          "vserver nfs create",
+                          "vserver iscsi start",
+                          "vserver iscsi show",
+                          "vserver iscsi modify",
+                          "vserver iscsi delete",
+                          "vserver iscsi create",
+                          "vserver fcp show",
+                          "vserver fcp modify",
+                          "vserver fcp delete",
+                          "vserver fcp create",
+                          "vserver export-policy show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy rule modify",
+                          "vserver export-policy rule delete",
+                          "vserver export-policy rule create",
+                          "vserver export-policy delete",
+                          "vserver export-policy create",
+                          "vserver peer show",
+                          "vserver",
+                          "volume",
+                          "volume snapshot show",
+                          "volume snapshot modify",
+                          "volume snapshot create",
+                          "volume show",
+                          "volume quota report",
+                          "volume qtree show",
+                          "volume qtree create",
+                          "volume mount",
+                          "volume unmount",
+                          "volume modify",
+                          "volume offline",
+                          "volume online",
+                          "volume file show-filehandle",
+                          "volume file show-disk-usage",
+                          "volume file reservation",
+                          "volume file clone show-autodelete-list",
+                          "volume file clone create",
+                          "volume file clone autodelete",
+                          "volume efficiency show",
+                          "volume efficiency modify",
+                          "volume destroy",
+                          "volume create",
+                          "volume clone show",
+                          "volume clone create",
+                          "snapmirror abort",
+                          "snapmirror break",
+                          "snapmirror show",
+                          "snapmirror delete",
+                          "snapmirror initialize",
+                          "snapmirror quiesce",
+                          "snapmirror release",
+                          "snapmirror resync",
+                          "snapmirror update",
+                          "snapmirror policy show",
+                          "snapmirror policy modify",
+                          "snapmirror policy delete",
+                          "snapmirror policy create",
+                          "snapmirror list-destinations",
+                          "snapmirror create",
+                          "network",
+                          "job",
+                          "event generate-autosupport-log"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "cluster identity show",
+                          "cluster peer show",
+                          "cluster show",
+                          "metrocluster show",
+                          "storage aggregate show",
+                          "storage disk show",
+                          "system license show",
+                          "system node show",
+                          "system snmp show",
+                          "vserver peer show",
+                          "vserver fcp interface show",
+                          "vserver fcp initiator show",
+                          "version",
+                          "security login role",
+                          "lun persistent-reservation show"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "svm",
+              "privileges": [
+                {
+                  "name": "Discovery",
+                  "description": "This role allows for the discovery of all the connected storage controllers.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "security login role show-user-capability",
+                          "set",
+                          "event generate-autosupport-log",
+                          "volume efficiency stat",
+                          "snapmirror show",
+                          "job"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun geometry",
+                          "lun igroup show",
+                          "lun show",
+                          "network interface",
+                          "version",
+                          "volume efficiency show",
+                          "volume qtree show",
+                          "volume quota report",
+                          "volume quota show",
+                          "volume show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy show",
+                          "vserver fcp initiator show",
+                          "vserver fcp interface show",
+                          "vserver fcp show",
+                          "vserver iscsi show",
+                          "vserver nfs show",
+                          "vserver nfs status",
+                          "vserver",
+                          "lun mapping show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Create Storage",
+                  "description": "This role allows for the creation of volumes and logical unit number (LUNs).",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun comment",
+                          "lun create",
+                          "lun igroup add",
+                          "lun igroup create",
+                          "lun igroup set",
+                          "lun igroup show",
+                          "lun modify",
+                          "lun move cancel",
+                          "lun move modify",
+                          "lun move pause",
+                          "lun move recover-source",
+                          "lun move resume",
+                          "lun move show",
+                          "lun move show-by-job-info",
+                          "lun move start",
+                          "lun online",
+                          "volume autosize",
+                          "volume clone create",
+                          "volume create",
+                          "volume efficiency on",
+                          "volume efficiency show",
+                          "volume efficiency start",
+                          "volume efficiency stop",
+                          "volume modify",
+                          "volume restrict",
+                          "volume snapshot create",
+                          "volume snapshot delete",
+                          "volume unmount",
+                          "vserver export-policy rule create",
+                          "vserver export-policy rule setindex",
+                          "vserver iscsi interface accesslist add",
+                          "vserver nfs status",
+                          "snapmirror abort",
+                          "snapmirror break",
+                          "snapmirror check",
+                          "snapmirror create",
+                          "snapmirror delete",
+                          "snapmirror get-volume-status",
+                          "snapmirror initialize",
+                          "snapmirror list-destinations",
+                          "snapmirror modify",
+                          "snapmirror quiesce",
+                          "snapmirror release",
+                          "snapmirror restore",
+                          "snapmirror resume",
+                          "snapmirror resync",
+                          "snapmirror show",
+                          "snapmirror update",
+                          "snapmirror policy add-rule",
+                          "snapmirror policy create",
+                          "snapmirror policy delete",
+                          "snapmirror policy modify",
+                          "snapmirror policy modify-rule",
+                          "snapmirror policy remove-rule",
+                          "snapmirror policy show",
+                          "snapmirror snapshot-owner create",
+                          "snapmirror snapshot-owner delete",
+                          "snapmirror snapshot-owner show",
+                          "snapmirror update-ls-set",
+                          "lun mapping create",
+                          "lun mapping delete",
+                          "vserver services name-service unix-group adduser",
+                          "vserver services name-service unix-group addusers",
+                          "vserver services name-service unix-group create",
+                          "vserver services name-service unix-group delete",
+                          "vserver services name-service unix-group deluser",
+                          "vserver services name-service unix-group load-from-uri",
+                          "vserver services name-service unix-group modify",
+                          "vserver services name-service unix-group show",
+                          "vserver services name-service unix-group file show",
+                          "vserver services name-service unix-group file status",
+                          "vserver services name-service unix-group file-only modify",
+                          "vserver services name-service unix-group file-only show",
+                          "vserver services name-service unix-user create",
+                          "vserver services name-service unix-user delete",
+                          "vserver services name-service unix-user load-from-uri",
+                          "vserver services name-service unix-user modify",
+                          "vserver services name-service unix-user show",
+                          "vserver services name-service unix-user file show",
+                          "vserver services name-service unix-user file status",
+                          "vserver services name-service unix-user file-only modify",
+                          "vserver services name-service unix-user file-only show"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "job show-completed",
+                          "volume snapshot show",
+                          "vserver fcp initiator show",
+                          "vserver iscsi connection show",
+                          "vserver iscsi interface show",
+                          "vserver iscsi session show",
+                          "lun mapping show"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Modify Storage",
+                  "description": "This role allows for the resizing and deduplicating of storage.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun resize",
+                          "volume efficiency off",
+                          "volume file show-disk-usage",
+                          "volume size"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Destroy Storage",
+                  "description": "This role allows for the destruction of volumes and LUNs.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun delete",
+                          "lun offline",
+                          "volume destroy",
+                          "volume offline"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "NAS/SAN Role",
+                  "description": "This role allows for the discovery of all the connected storage controllers in a NAS or SAN only on VMware SRM environment.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "vserver nfs status",
+                          "vserver nfs show",
+                          "vserver nfs modify",
+                          "vserver nfs delete",
+                          "vserver nfs create",
+                          "vserver iscsi start",
+                          "vserver iscsi show",
+                          "vserver iscsi modify",
+                          "vserver iscsi delete",
+                          "vserver iscsi create",
+                          "vserver fcp show",
+                          "vserver fcp modify",
+                          "vserver fcp delete",
+                          "vserver fcp create",
+                          "vserver export-policy show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy rule modify",
+                          "vserver export-policy rule delete",
+                          "vserver export-policy rule create",
+                          "vserver export-policy delete",
+                          "vserver export-policy create",
+                          "vserver peer show",
+                          "vserver",
+                          "volume snapshot show",
+                          "volume snapshot modify",
+                          "volume snapshot create",
+                          "volume show",
+                          "volume quota report",
+                          "volume qtree show",
+                          "volume qtree create",
+                          "volume mount",
+                          "volume unmount",
+                          "volume modify",
+                          "volume offline",
+                          "volume online",
+                          "volume file show-filehandle",
+                          "volume file show-disk-usage",
+                          "volume file reservation",
+                          "volume file clone show-autodelete-list",
+                          "volume file clone create",
+                          "volume file clone autodelete",
+                          "volume efficiency show",
+                          "volume efficiency modify",
+                          "volume destroy",
+                          "volume create",
+                          "volume clone show",
+                          "volume clone create",
+                          "snapmirror abort",
+                          "snapmirror break",
+                          "snapmirror show",
+                          "snapmirror delete",
+                          "snapmirror initialize",
+                          "snapmirror quiesce",
+                          "snapmirror release",
+                          "snapmirror resync",
+                          "snapmirror update",
+                          "snapmirror policy show",
+                          "snapmirror policy modify",
+                          "snapmirror policy delete",
+                          "snapmirror policy create",
+                          "snapmirror list-destinations",
+                          "snapmirror create",
+                          "network",
+                          "lun show",
+                          "lun set space-alloc",
+                          "lun set reservation",
+                          "lun set dev_id",
+                          "lun portset show",
+                          "lun portset remove",
+                          "lun portset delete",
+                          "lun portset create",
+                          "lun portset add",
+                          "lun persistent-reservation clear",
+                          "lun modify",
+                          "lun online",
+                          "lun mapping show",
+                          "lun mapping delete",
+                          "lun mapping create",
+                          "lun igroup add",
+                          "lun igroup unbind",
+                          "lun igroup show",
+                          "lun igroup set",
+                          "lun igroup rename",
+                          "lun igroup remove",
+                          "lun igroup modify",
+                          "lun igroup disable-aix-support",
+                          "lun igroup delete",
+                          "lun igroup create",
+                          "lun create",
+                          "job",
+                          "event generate-autosupport-log"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "vserver peer show",
+                          "vserver fcp interface show",
+                          "vserver fcp initiator show",
+                          "version",
+                          "security login role",
+                          "lun persistent-reservation show"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VSC, VASA Provider and SRA",
+          "display_name": "VSC VP & SRA",
+          "description": "VSC, VASA Provider and SRA",
+          "scope": [
+            {
+              "name": "cluster",
+              "privileges": [
+                {
+                  "name": "Discovery",
+                  "description": "This role allows for the discovery of all the connected storage controllers.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "network interface migrate",
+                          "security login role show-user-capability",
+                          "set",
+                          "storage failover show",
+                          "system node run",
+                          "volume efficiency stat",
+                          "job"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "cluster identity show",
+                          "cluster peer show",
+                          "cluster show",
+                          "lun geometry",
+                          "lun igroup show",
+                          "lun show",
+                          "network fcp adapter show",
+                          "network interface show",
+                          "network port show",
+                          "security login role show-ontapi",
+                          "security login role show",
+                          "security login show",
+                          "snapmirror show",
+                          "storage aggregate show",
+                          "storage disk show",
+                          "system health alert show",
+                          "system health status show",
+                          "system license show",
+                          "system node run",
+                          "system node show",
+                          "version",
+                          "volume efficiency show",
+                          "volume qtree show",
+                          "volume quota report",
+                          "volume quota show",
+                          "volume show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy show",
+                          "vserver fcp initiator show",
+                          "vserver fcp interface show",
+                          "vserver fcp show",
+                          "vserver iscsi show",
+                          "vserver nfs show",
+                          "vserver nfs status",
+                          "vserver show",
+                          "lun mapping show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Create Storage",
+                  "description": "This role allows for the creation of volumes and logical unit number (LUNs).",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun comment",
+                          "lun create",
+                          "lun igroup add",
+                          "lun igroup create",
+                          "lun igroup set",
+                          "lun igroup show",
+                          "lun modify",
+                          "lun move",
+                          "lun online",
+                          "snapmirror update-ls-set",
+                          "system node autosupport invoke",
+                          "volume autosize",
+                          "volume clone create",
+                          "volume create",
+                          "volume efficiency on",
+                          "volume efficiency show",
+                          "volume efficiency start",
+                          "volume efficiency stop",
+                          "volume modify",
+                          "volume restrict",
+                          "volume snapshot create",
+                          "volume snapshot delete",
+                          "volume unmount",
+                          "vserver export-policy rule create",
+                          "vserver export-policy rule setindex",
+                          "vserver iscsi interface accesslist add",
+                          "vserver nfs status",
+                          "vserver services name-service unix-group",
+                          "vserver services name-service unix-user",
+                          "lun mapping create",
+                          "lun mapping delete",
+                          "qos policy-group create"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "job show-completed",
+                          "snapmirror show",
+                          "volume snapshot show",
+                          "vserver fcp initiator show",
+                          "vserver iscsi connection show",
+                          "vserver iscsi interface show",
+                          "vserver iscsi session show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Modify Storage",
+                  "description": "This role allows for the resizing and deduplicating of storage.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun resize",
+                          "volume efficiency off",
+                          "volume file",
+                          "volume size"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Destroy Storage",
+                  "description": "This role allows for the destruction of volumes and LUNs.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun delete",
+                          "lun offline",
+                          "volume destroy",
+                          "volume offline"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "NAS/SAN Role",
+                  "description": "This role allows for the discovery of all the connected storage controllers in a NAS or SAN only on VMware SRM environment.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun",
+                          "qos policy-group create",
+                          "qos policy-group show",
+                          "snapmirror",
+                          "storage failover show",
+                          "system node run",
+                          "system services ndmp",
+                          "system snmp traphost add",
+                          "system snmp traphost delete",
+                          "vserver nfs status",
+                          "vserver nfs show",
+                          "vserver nfs modify",
+                          "vserver nfs delete",
+                          "vserver nfs create",
+                          "vserver iscsi start",
+                          "vserver iscsi show",
+                          "vserver iscsi modify",
+                          "vserver iscsi delete",
+                          "vserver iscsi create",
+                          "vserver fcp show",
+                          "vserver fcp modify",
+                          "vserver fcp delete",
+                          "vserver fcp create",
+                          "vserver export-policy show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy rule modify",
+                          "vserver export-policy rule delete",
+                          "vserver export-policy rule create",
+                          "vserver export-policy delete",
+                          "vserver export-policy create",
+                          "vserver peer show",
+                          "vserver",
+                          "volume",
+                          "volume snapshot show",
+                          "volume snapshot modify",
+                          "volume snapshot create",
+                          "volume show",
+                          "volume quota report",
+                          "volume qtree show",
+                          "volume qtree create",
+                          "volume mount",
+                          "volume unmount",
+                          "volume modify",
+                          "volume offline",
+                          "volume online",
+                          "volume file show-filehandle",
+                          "volume file show-disk-usage",
+                          "volume file reservation",
+                          "volume file clone show-autodelete-list",
+                          "volume file clone create",
+                          "volume file clone autodelete",
+                          "volume efficiency show",
+                          "volume efficiency modify",
+                          "volume destroy",
+                          "volume create",
+                          "volume clone show",
+                          "volume clone create",
+                          "snapmirror abort",
+                          "snapmirror break",
+                          "snapmirror show",
+                          "snapmirror delete",
+                          "snapmirror initialize",
+                          "snapmirror quiesce",
+                          "snapmirror release",
+                          "snapmirror resync",
+                          "snapmirror update",
+                          "snapmirror policy show",
+                          "snapmirror policy modify",
+                          "snapmirror policy delete",
+                          "snapmirror policy create",
+                          "snapmirror list-destinations",
+                          "snapmirror create",
+                          "network",
+                          "job",
+                          "event generate-autosupport-log"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "cluster identity show",
+                          "cluster peer show",
+                          "cluster show",
+                          "metrocluster show",
+                          "storage aggregate show",
+                          "storage disk show",
+                          "system license show",
+                          "system node show",
+                          "system snmp show",
+                          "vserver peer show",
+                          "vserver fcp interface show",
+                          "vserver fcp initiator show",
+                          "version",
+                          "security login role",
+                          "lun persistent-reservation show"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "svm",
+              "privileges": [
+                {
+                  "name": "Discovery",
+                  "description": "This role allows for the discovery of all the connected storage controllers.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "security login role show-user-capability",
+                          "set",
+                          "event generate-autosupport-log",
+                          "volume efficiency stat",
+                          "snapmirror show",
+                          "job"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun geometry",
+                          "lun igroup show",
+                          "lun show",
+                          "network interface",
+                          "version",
+                          "volume efficiency show",
+                          "volume qtree show",
+                          "volume quota report",
+                          "volume quota show",
+                          "volume show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy show",
+                          "vserver fcp initiator show",
+                          "vserver fcp interface show",
+                          "vserver fcp show",
+                          "vserver iscsi show",
+                          "vserver nfs show",
+                          "vserver nfs status",
+                          "vserver",
+                          "lun mapping show",
+                          "snapmirror list-destinations"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Create Storage",
+                  "description": "This role allows for the creation of volumes and logical unit number (LUNs).",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun comment",
+                          "lun create",
+                          "lun igroup add",
+                          "lun igroup create",
+                          "lun igroup set",
+                          "lun igroup show",
+                          "lun modify",
+                          "lun move cancel",
+                          "lun move modify",
+                          "lun move pause",
+                          "lun move recover-source",
+                          "lun move resume",
+                          "lun move show",
+                          "lun move show-by-job-info",
+                          "lun move start",
+                          "lun online",
+                          "volume autosize",
+                          "volume clone create",
+                          "volume create",
+                          "volume efficiency on",
+                          "volume efficiency show",
+                          "volume efficiency start",
+                          "volume efficiency stop",
+                          "volume modify",
+                          "volume restrict",
+                          "volume snapshot create",
+                          "volume snapshot delete",
+                          "volume unmount",
+                          "vserver export-policy rule create",
+                          "vserver export-policy rule setindex",
+                          "vserver iscsi interface accesslist add",
+                          "vserver nfs status",
+                          "snapmirror abort",
+                          "snapmirror break",
+                          "snapmirror check",
+                          "snapmirror create",
+                          "snapmirror delete",
+                          "snapmirror get-volume-status",
+                          "snapmirror initialize",
+                          "snapmirror list-destinations",
+                          "snapmirror modify",
+                          "snapmirror quiesce",
+                          "snapmirror release",
+                          "snapmirror restore",
+                          "snapmirror resume",
+                          "snapmirror resync",
+                          "snapmirror show",
+                          "snapmirror update",
+                          "snapmirror policy add-rule",
+                          "snapmirror policy create",
+                          "snapmirror policy delete",
+                          "snapmirror policy modify",
+                          "snapmirror policy modify-rule",
+                          "snapmirror policy remove-rule",
+                          "snapmirror policy show",
+                          "snapmirror snapshot-owner create",
+                          "snapmirror snapshot-owner delete",
+                          "snapmirror snapshot-owner show",
+                          "snapmirror update-ls-set",
+                          "lun mapping create",
+                          "lun mapping delete",
+                          "vserver services name-service unix-group adduser",
+                          "vserver services name-service unix-group addusers",
+                          "vserver services name-service unix-group create",
+                          "vserver services name-service unix-group delete",
+                          "vserver services name-service unix-group deluser",
+                          "vserver services name-service unix-group load-from-uri",
+                          "vserver services name-service unix-group modify",
+                          "vserver services name-service unix-group show",
+                          "vserver services name-service unix-group file show",
+                          "vserver services name-service unix-group file status",
+                          "vserver services name-service unix-group file-only modify",
+                          "vserver services name-service unix-group file-only show",
+                          "vserver services name-service unix-user create",
+                          "vserver services name-service unix-user delete",
+                          "vserver services name-service unix-user load-from-uri",
+                          "vserver services name-service unix-user modify",
+                          "vserver services name-service unix-user show",
+                          "vserver services name-service unix-user file show",
+                          "vserver services name-service unix-user file status",
+                          "vserver services name-service unix-user file-only modify",
+                          "vserver services name-service unix-user file-only show"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "job show-completed",
+                          "volume snapshot show",
+                          "vserver fcp initiator show",
+                          "vserver iscsi connection show",
+                          "vserver iscsi interface show",
+                          "vserver iscsi session show",
+                          "lun mapping show"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Modify Storage",
+                  "description": "This role allows for the resizing and deduplicating of storage.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun resize",
+                          "volume efficiency off",
+                          "volume file show-disk-usage",
+                          "volume size"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Destroy Storage",
+                  "description": "This role allows for the destruction of volumes and LUNs.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "lun delete",
+                          "lun offline",
+                          "volume destroy",
+                          "volume offline"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "NAS/SAN Role",
+                  "description": "This role allows for the discovery of all the connected storage controllers in a NAS or SAN only on VMware SRM environment.",
+                  "access": {
+                    "all": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "vserver nfs status",
+                          "vserver nfs show",
+                          "vserver nfs modify",
+                          "vserver nfs delete",
+                          "vserver nfs create",
+                          "vserver iscsi start",
+                          "vserver iscsi show",
+                          "vserver iscsi modify",
+                          "vserver iscsi delete",
+                          "vserver iscsi create",
+                          "vserver fcp show",
+                          "vserver fcp modify",
+                          "vserver fcp delete",
+                          "vserver fcp create",
+                          "vserver export-policy show",
+                          "vserver export-policy rule show",
+                          "vserver export-policy rule modify",
+                          "vserver export-policy rule delete",
+                          "vserver export-policy rule create",
+                          "vserver export-policy delete",
+                          "vserver export-policy create",
+                          "vserver peer show",
+                          "vserver",
+                          "volume snapshot show",
+                          "volume snapshot modify",
+                          "volume snapshot create",
+                          "volume show",
+                          "volume quota report",
+                          "volume qtree show",
+                          "volume qtree create",
+                          "volume mount",
+                          "volume unmount",
+                          "volume modify",
+                          "volume offline",
+                          "volume online",
+                          "volume file show-filehandle",
+                          "volume file show-disk-usage",
+                          "volume file reservation",
+                          "volume file clone show-autodelete-list",
+                          "volume file clone create",
+                          "volume file clone autodelete",
+                          "volume efficiency show",
+                          "volume efficiency modify",
+                          "volume destroy",
+                          "volume create",
+                          "volume clone show",
+                          "volume clone create",
+                          "snapmirror abort",
+                          "snapmirror break",
+                          "snapmirror show",
+                          "snapmirror delete",
+                          "snapmirror initialize",
+                          "snapmirror quiesce",
+                          "snapmirror release",
+                          "snapmirror resync",
+                          "snapmirror update",
+                          "snapmirror policy show",
+                          "snapmirror policy modify",
+                          "snapmirror policy delete",
+                          "snapmirror policy create",
+                          "snapmirror list-destinations",
+                          "snapmirror create",
+                          "network",
+                          "lun show",
+                          "lun set space-alloc",
+                          "lun set reservation",
+                          "lun set dev_id",
+                          "lun portset show",
+                          "lun portset remove",
+                          "lun portset delete",
+                          "lun portset create",
+                          "lun portset add",
+                          "lun persistent-reservation clear",
+                          "lun modify",
+                          "lun online",
+                          "lun mapping show",
+                          "lun mapping delete",
+                          "lun mapping create",
+                          "lun igroup add",
+                          "lun igroup unbind",
+                          "lun igroup show",
+                          "lun igroup set",
+                          "lun igroup rename",
+                          "lun igroup remove",
+                          "lun igroup modify",
+                          "lun igroup disable-aix-support",
+                          "lun igroup delete",
+                          "lun igroup create",
+                          "lun create",
+                          "job",
+                          "event generate-autosupport-log"
+                        ]
+                      }
+                    ],
+                    "read": [
+                      {
+                        "ontap_version": ["9.9"],
+                        "commands": [
+                          "vserver peer show",
+                          "vserver fcp interface show",
+                          "vserver fcp initiator show",
+                          "version",
+                          "security login role",
+                          "lun persistent-reservation show"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
